@@ -1,0 +1,184 @@
+/*
+Assignment - ICA06 
+Author - Sanjay Kumar 
+Date - 17 March, 2025 
+Course - CMPE2000 Web Development
+*/
+
+/* Set up the body layout with a grid system */
+body {
+    background-color: black;
+    /* Set background color to black */
+    display: grid;
+    /* Use CSS grid for layout */
+    grid-template-columns: 1fr 4fr 1fr;
+    /* Create a 3-column layout, with the center column being 4 times wider */
+    color: white;
+    /* Set text color to white for readability */
+    font-family: monospace;
+    /* Set font family to monospace for a code-like look */
+}
+
+/* Style the header section that spans across all three columns */
+header {
+    grid-column: span 3;
+    /* Make the header span across all columns */
+    background-color: aliceblue;
+    /* Set a light blue background for the header */
+    text-align: center;
+    /* Center-align the header text */
+    padding: 20px;
+    /* Add padding around the header content */
+    font-family: 'Courier New', Courier, monospace;
+    /* Use a monospace font for the header */
+    font-size: 40px;
+    /* Set font size for the header */
+    color: whitesmoke;
+    /* Set text color to a light white */
+    text-shadow: black 1px 0 10px;
+    /* Add a subtle black shadow for the text */
+}
+
+/* Main content area styles */
+main {
+    margin: 15px;
+    /* Add margin around the main content */
+    background-color: rgb(41, 39, 39);
+    /* Set a dark background color for the main content */
+    grid-column: 2 / 3;
+    /* Position the main content in the center column */
+}
+
+/* Form layout styled with CSS grid */
+form {
+    display: grid;
+    /* Use grid layout for the form */
+    grid-template-columns: 1fr 3fr;
+    /* Create two columns - first for labels and second for inputs */
+}
+
+/* Label styling for form labels */
+label {
+    grid-column: 1 / 2;
+    /* Position labels in the first column */
+    text-align: end;
+    /* Align label text to the right */
+    padding-right: 40px;
+    /* Add padding on the right side for spacing */
+}
+
+/* Styling for specific labels */
+label[for=dropDown],
+[for=radio],
+label[for=system] {
+    line-height: 70px;
+    /* Set the line height to vertically center text */
+    vertical-align: middle;
+    /* Ensure text aligns in the middle vertically */
+}
+
+/* Styling for the select dropdown */
+select {
+    background-color: black;
+    /* Set a black background for the dropdown */
+    color: white;
+    /* Set text color to white */
+    width: 20%;
+    /* Set a fixed width for the dropdown */
+}
+
+/* Styling for options inside the select dropdown */
+option {
+    padding-left: 0px;
+    /* Remove any left padding for the options */
+}
+
+/* Fieldset styling for grouping related form elements */
+fieldset {
+    margin-right: 0;
+    /* Remove the right margin */
+    border: none;
+    /* Remove the border around the fieldset */
+    background-color: black;
+    /* Set background color to black */
+}
+
+/* Text input field styling */
+input[type=text] {
+    border: 2px solid gainsboro;
+    /* Set a light border color */
+    background-color: black;
+    /* Set background to black */
+    color: white;
+    /* Set text color to white */
+}
+
+/* Submit button styling */
+button[type=submit] {
+    grid-column: span 2;
+    /* Make the submit button span across two columns */
+    background-color: black;
+    /* Set background to black */
+    color: white;
+    /* Set text color to white */
+    border: 1px solid white;
+    /* Add a white border around the button */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 5px;
+    /* Add some margin at the top of the footer */
+    grid-column: span 3;
+    /* Make the footer span across all three columns */
+    background-color: aliceblue;
+    /* Set background to a light blue color */
+    color: black;
+    /* Set text color to black */
+    text-align: center;
+    /* Center-align the text inside the footer */
+}
+
+/* Style specific to the dropdown menu */
+#dropDown {
+    grid-column: 2 / 3;
+    /* Place the dropdown in the center column */
+}
+
+/* Styling for the bike image container */
+#bikeImage {
+    grid-column: 2 / 3;
+    /* Place the bike image in the center column, aligning with the dropdown */
+}
+
+/* Style for the status output message */
+#status_output {
+    grid-column: span 2;
+    /* Make the status output span across two columns */
+}
+
+/* Media query for responsive design when the viewport width is less than or equal to 600px */
+@media (max-width : 600px) {
+
+    /* Make the body layout switch to a block layout for small screens */
+    body {
+        display: block;
+    }
+
+    /* Stack form elements in a block layout */
+    form {
+        display: block;
+    }
+
+    /* Adjust the dropdown width to be more appropriate for smaller screens */
+    #dropDown {
+        width: 100px;
+        /* Reduce the width of the dropdown to 100px */
+    }
+
+    /* Make the submit button take the full width of the form on smaller screens */
+    button {
+        width: 100%;
+        /* Make the button take up the full width of the form */
+    }
+}

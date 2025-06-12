@@ -1,0 +1,348 @@
+/*
+ Program : Lab2
+ Author  : Sanjay Kumar
+ Date    : 31 March, 2025
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* The gameboard is displayed as a grid with 2 larger columns on either side and 9 smaller columns in the center */
+#gameboard {
+    display: grid;
+    grid-template-columns: 2fr repeat(9, 1fr) 2fr;  /* Defines the grid layout with two large columns and nine smaller columns */
+    text-align: center;  /* Centers the text inside each section */
+    background-color: bisque;  /* Sets the background color of the gameboard */
+}
+
+/* Top row sections: Each section represents a square on the top row of the Monopoly board. 
+   They are assigned to specific grid columns and rows using the "suite" attribute for easy targeting. */
+section[suite="0101"] {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+section[suite="0102"] {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+section[suite="0103"] {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+section[suite="0104"] {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+section[suite="0105"] {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+section[suite="0106"] {
+    grid-column: 6;
+    grid-row: 1;
+}
+
+section[suite="0107"] {
+    grid-column: 7;
+    grid-row: 1;
+}
+
+section[suite="0108"] {
+    grid-column: 8;
+    grid-row: 1;
+}
+
+section[suite="0109"] {
+    grid-column: 9;
+    grid-row: 1;
+}
+
+section[suite="0110"] {
+    grid-column: 10;
+    grid-row: 1;
+}
+
+section[suite="0111"] {
+    grid-column: 11;
+    grid-row: 1;
+}
+
+/* Bottom row sections: These sections correspond to the bottom row of the Monopoly board */
+section[suite="1101"] {
+    grid-column: 1;
+    grid-row: 11;
+}
+
+section[suite="1102"] {
+    grid-column: 2;
+    grid-row: 11;
+}
+
+section[suite="1103"] {
+    grid-column: 3;
+    grid-row: 11;
+}
+
+section[suite="1104"] {
+    grid-column: 4;
+    grid-row: 11;
+}
+
+section[suite="1105"] {
+    grid-column: 5;
+    grid-row: 11;
+}
+
+section[suite="1106"] {
+    grid-column: 6;
+    grid-row: 11;
+}
+
+section[suite="1107"] {
+    grid-column: 7;
+    grid-row: 11;
+}
+
+section[suite="1108"] {
+    grid-column: 8;
+    grid-row: 11;
+}
+
+section[suite="1109"] {
+    grid-column: 9;
+    grid-row: 11;
+}
+
+section[suite="1110"] {
+    grid-column: 10;
+    grid-row: 11;
+}
+
+section[suite="1111"] {
+    grid-column: 11;
+    grid-row: 11;
+}
+
+/* Left column sections: These sections correspond to the left column of the Monopoly board */
+section[suite="0201"] {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+section[suite="0301"] {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+section[suite="0401"] {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+section[suite="0501"] {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+section[suite="0601"] {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+section[suite="0701"] {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+section[suite="0801"] {
+    grid-column: 1;
+    grid-row: 8;
+}
+
+section[suite="0901"] {
+    grid-column: 1;
+    grid-row: 9;
+}
+
+section[suite="1001"] {
+    grid-column: 1;
+    grid-row: 10;
+}
+
+/* Right column sections: These sections correspond to the right column of the Monopoly board */
+section[suite="0211"] {
+    grid-column: 11;
+    grid-row: 2;
+}
+
+section[suite="0311"] {
+    grid-column: 11;
+    grid-row: 3;
+}
+
+section[suite="0411"] {
+    grid-column: 11;
+    grid-row: 4;
+}
+
+section[suite="0511"] {
+    grid-column: 11;
+    grid-row: 5;
+}
+
+section[suite="0611"] {
+    grid-column: 11;
+    grid-row: 6;
+}
+
+section[suite="0711"] {
+    grid-column: 11;
+    grid-row: 7;
+}
+
+section[suite="0811"] {
+    grid-column: 11;
+    grid-row: 8;
+}
+
+section[suite="0911"] {
+    grid-column: 11;
+    grid-row: 9;
+}
+
+section[suite="1011"] {
+    grid-column: 11;
+    grid-row: 10;
+}
+
+/* General styling for all sections, applying a border around each square on the gameboard */
+section {
+    border: 1px solid black;
+    height: 100px;  /* Default height for each section */
+}
+
+/* Body styling: sets the font for the whole page */
+body {
+    font-family: "Poppins", sans-serif;  /* Applies the Poppins font (commented out import) */
+}
+
+/* Styling for each section to make it a grid with two equal columns */
+section {
+    border: black 2px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Creates two columns inside each section */
+    font-size: small;  /* Sets the font size to small */
+    box-sizing: border-box;  /* Ensures padding and border are included in the element's total size */
+}
+
+/* Middle area where game-related content (like dice roll and player info) is displayed */
+.middle {
+    grid-area: C2;  /* Assigns this section to a specific grid area */
+    grid-column: 2/11;  /* Spans across columns 2 to 11 */
+    grid-row: 2/11;  /* Spans across rows 2 to 11 */
+}
+
+/* Section borders for different colors, styled to highlight specific properties based on the color scheme */
+.lightblue.top {
+    border-top: lightblue 30px solid;  /* Applies a lightblue border to the top of sections */
+}
+
+.brown.top {
+    border-top: brown 30px solid;  /* Applies a brown border to the top of sections */
+}
+
+.purple.right {
+    border-right: purple 30px solid;  /* Applies a purple border to the right of sections */
+}
+
+.orange.right {
+    border-right: orange 30px solid;  /* Applies an orange border to the right of sections */
+}
+
+.red.bottom {
+    border-bottom: red 30px solid;  /* Applies a red border to the bottom of sections */
+}
+
+.yellow.bottom {
+    border-bottom: yellow 30px solid;  /* Applies a yellow border to the bottom of sections */
+}
+
+.green.left {
+    border-left: green 30px solid;  /* Applies a green border to the left of sections */
+}
+
+.blue.left {
+    border-left: blue 30px solid;  /* Applies a blue border to the left of sections */
+}
+
+/* Header styling: sets the font size and background color for the header */
+header {
+    font-size: 36pt;
+    background-color: lightskyblue;  /* Light blue background color for the header */
+    text-align: center;  /* Centers the text inside the header */
+    margin-bottom: 20px;  /* Adds margin below the header */
+}
+
+/* Styling for the buffer class in the aside section (for spacing above content) */
+aside .buffer {
+    margin-top: 100px;  /* Adds 100px of space at the top of the aside section */
+}
+
+/* Image styling for player images */
+img {
+    width: 40px;  /* Sets the width of images (player icons) */
+    height: 40px;  /* Sets the height of images */
+}
+
+/* Grid styling for the player info section */
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Creates two equal columns for player info */
+}
+
+/* Styling for Player 1's section (background color) */
+#player1div,
+.p1 {
+    background-color: lightgreen;  /* Light green background color for Player 1 */
+}
+
+/* Styling for Player 2's section (background color) */
+#player2div,
+.p2 {
+    background-color: violet;  /* Violet background color for Player 2 */
+}
+
+/* Styling for the "active" class (highlights active player) */
+.active {
+    border: 5px dotted red;  /* Red dotted border to highlight the active player */
+}
+
+/* Styling for the dice images */
+.die {
+    width: 60px;  /* Sets the size of the dice images */
+    height: 60px;
+    cursor: pointer;  /* Changes the cursor to a pointer when hovering over dice */
+}
+
+figure {
+    display: inline;  /* Makes the dice figures display inline (side-by-side) */
+}
+
+/* Styling for the player's amount of money (green background, centered) */
+.amount {
+    background-color: green;  /* Green background color for the money display */
+    border: grey 2px solid;  /* Grey border around the amount box */
+    font-size: 14pt;  /* Font size for the amount text */
+    width: 200px;  /* Sets the width of the amount box */
+    height: 50px;  /* Sets the height of the amount box */
+    margin-left: auto;  /* Centers the amount box horizontally */
+    margin-right: auto;
+}
+
+/* Styling for the pawn (player piece) */
+#pawn {
+    background-color: bisque;  /* Sets the background color of the pawn to bisque */
+}

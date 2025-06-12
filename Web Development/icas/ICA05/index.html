@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+    <title>ICA05</title>
+</head>
+
+<body>
+    <!-- Header section with the page title -->
+    <header>ICA05 - Javascript Intro</header>
+
+    <main>
+        <div class="container">
+
+            <!-- Redirect Using Location -->
+            <div>
+                <label>Redirect Using Location: </label>
+                <!-- Button triggers a function to redirect to Google when clicked -->
+                <button id="chrome" onclick="google()"><img src="image/chrome.png" alt="This is chrome image"></button>
+            </div>
+
+            <!-- Background Color Picker Section -->
+            <div class="colorPick">
+                <label>Background Color Picker: </label>
+                <section id="colorpos">
+                    <!-- Color picker input element to choose a color -->
+                    <input type="color" id="color">&nbsp;
+                    <!-- Button triggers a function to set the background color when clicked -->
+                    <button onclick="setBackground()">Set Background</button>
+                </section>
+            </div>
+
+            <!-- Current Dimensions Section -->
+            <div class="dimensions">
+                <label type="">Current Dimensions: </label>
+                <section id="dimensionbox">
+                    <!-- Button triggers a function to show current dimensions of the window -->
+                    <button onclick="showDimensions()">ShowDimensions</button>&nbsp;
+                    <!-- Text input to display dimensions -->
+                    <input type="text" id="inputbox">
+                </section>
+            </div>
+
+            <!-- Time Display Section -->
+            <div class="time">
+                <label>What time is it: </label>
+                <!-- Button triggers a function to show current time -->
+                <button onclick="showTime()" id="currentTime">Now!!!</button>
+            </div>
+
+            <!-- User Agent Section -->
+            <div class="agent">
+                <label>Secret Agent, Man: </label>
+                <!-- Button triggers a function to show user agent info -->
+                <button onclick="userAgent(this)" id="agent">Whose my Daddy?</button><br>
+            </div>
+
+            <!-- Prompt Test Section -->
+            <div class="prompt">
+                <label>Prompt Test: </label>
+                <!-- Button triggers a function to show a prompt dialog -->
+                <button onclick="promptTest(this)" id="promptTest">?</button>
+            </div>
+
+            <!-- Tux Creation Section -->
+            <div class="Tux">
+                <label id="tuxLbl">Make a Tux: </label>
+                <!-- Button triggers a function to create a tux image when clicked -->
+                <button onclick="createTux()" id="tuxBtn"><img src="image/Tux.png" id="tux"></button>
+            </div>
+
+            <!-- Dynamic Width Update Section -->
+            <div class="update">
+                <label>Dynamic Update: </label>
+                <section id="update">
+                    <!-- Range input for selecting a width value -->
+                    <input type="range" min="50" max="300" value="100" id="rangecontrol" onmousemove="dynamicWidth()">
+                    <!-- Button that triggers dynamic width change -->
+                    <button id="dynamicBtn">Dynamic Width</button>
+                </section>
+            </div>
+
+            <!-- Table Generation Section -->
+            <div class="table">
+                <label>Make a Table: </label>
+                <section id="tableRange">
+                    <!-- Row range input to select number of rows -->
+                    <input type="range" id="rowRange" min="1" max="8" value="1" oninput="updateRangeValue()">
+                    <!-- Display current number of rows -->
+                    <span class="range-label" id="rowValue">1</span>
+
+                    <!-- Column range input to select number of columns -->
+                    <input type="range" id="colRange" min="1" max="10" value="1" oninput="updateRangeValue()">
+                    <!-- Display current number of columns -->
+                    <span class="range-label" id="colValue">1</span>
+
+                    <!-- Button triggers the function to create the table -->
+                    <button onclick="tablize()">Tablize</button>
+                </section>
+            </div>
+        </div>
+
+        <!-- Output area where dynamic content (table, error messages, etc.) will be displayed -->
+        <div id="output"></div>
+    </main>
+
+    <!-- Footer section with copyright and last modified script -->
+    <footer>
+        <p>&#169; Λαησέζω</p>
+        <!-- JavaScript that displays the last modified date of the document -->
+        <script>
+            document.write("last modified:" + document.lastModified);
+        </script>
+    </footer>
+</body>
+
+<!-- External JavaScript file that contains the logic for all the interactive elements -->
+<script src="code.js"></script>
+
+</html>

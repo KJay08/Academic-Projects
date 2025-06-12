@@ -1,0 +1,271 @@
+/* Body styling */
+body {
+    background-color: lightgray;
+    /* Set the background color of the page */
+    padding: 10px;
+    /* Add padding around the body */
+    margin: 10px;
+    /* Add margin around the body */
+    display: grid;
+    /* Use grid layout for the body */
+    grid-template-columns: 1fr 3fr 1fr;
+    /* Define 3 columns, with the middle column taking up 3 times the space of the others */
+}
+
+/* Main section styling */
+main {
+    grid-column: 2/3;
+    /* Place the main content in the middle column */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    padding-top: 10px;
+    /* Add some padding at the top of the main content */
+}
+
+/* Header styling */
+header {
+    grid-column: span 3;
+    /* Make the header span across all 3 columns */
+    background-color: purple;
+    /* Set a purple background for the header */
+    color: aliceblue;
+    /* Set the text color to aliceblue */
+    font: bold;
+    /* Make the text bold */
+    font-size: 50px;
+    /* Set the font size */
+    font-family: cursive;
+    /* Use a cursive font */
+    text-align: center;
+    /* Center the text */
+    padding: 10px;
+    /* Add padding inside the header */
+}
+
+/* Footer styling */
+footer {
+    grid-column: span 3;
+    /* Make the footer span across all 3 columns */
+    text-align: center;
+    /* Center the text in the footer */
+}
+
+/* Container styling */
+.container {
+    background-color: #09b8b2;
+    /* Set the background color of the container to aqua */
+}
+
+/* Styling for each child element inside .container */
+.container>* {
+    display: grid;
+    /* Use grid layout for the child elements */
+    grid-template-columns: repeat(2, 1fr);
+    /* Create two equal-width columns for the child elements */
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+    /* Change the cursor to a pointer when hovering over buttons */
+}
+
+/* Label styling */
+label {
+    padding-top: 5px;
+    /* Add padding to the top of labels */
+    padding-right: 20px;
+    /* Add padding to the right of labels */
+    text-align: end;
+    /* Align the text to the end (right for left-to-right languages) */
+}
+
+/* Chrome button specific styling */
+#chrome {
+    background-color: whitesmoke;
+    /* Set a whitesmoke background color for the chrome button */
+    width: 100%;
+    /* Make the button take up 100% of its container's width */
+}
+
+/* Styling for children inside #chrome */
+#chrome>* {
+    height: 20px;
+    /* Set the height of child elements inside the chrome button */
+    background-color: whitesmoke;
+    /* Set the background color to whitesmoke */
+}
+
+/* Padding for sections like colorPick, dimensions, time, agent, etc. */
+.colorPick,
+.dimensions,
+.time,
+.agent,
+.prompt,
+.Tux,
+.update,
+.table {
+    padding-top: 2%;
+    /* Add some padding to the top of these sections */
+}
+
+/* Styling for color picker section */
+#colorpos>* {
+    width: 30%;
+    /* Set the width of elements inside the color picker to 30% */
+    height: 100%;
+    /* Set the height of elements to 100% */
+}
+
+/* Styling for the dimensions section */
+#dimensionbox>* {
+    width: 40%;
+    /* Set the width of elements inside dimension box to 40% */
+}
+
+/* Styling for the tux image */
+#tux {
+    height: 20px;
+    /* Set the height of the tux image */
+}
+
+/* Tux button specific styling */
+#tuxBtn {
+    height: 30px;
+    /* Set the height of the tux button */
+}
+
+/* Update section styling */
+#update>* {
+    width: 35%;
+    /* Set the width of elements inside the update section to 35% */
+}
+
+/* Range input specific styling */
+input[type=range] {
+    margin-top: 7px;
+    /* Add top margin for range input */
+    width: 35%;
+    /* Set the width of the range input to 35% */
+}
+
+/* Dynamic button transition */
+#dynamicBtn {
+    transition: width 0.1s ease;
+    /* Smooth transition for the width change */
+}
+
+/* Table cell and header styling */
+th,
+td {
+    padding: 10px;
+    /* Add padding to table headers and cells */
+}
+
+/* Table header background color */
+thead {
+    background-color: rgba(144, 238, 144, 0.384);
+    /* Set a light greenish background color with transparency */
+}
+
+/* First table column background color */
+tr td:first-child {
+    background-color: rgba(144, 238, 144, 0.384);
+    /* Set a light greenish background color for the first column */
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    /* Collapse borders between table cells */
+}
+
+/* Output area styling */
+#output {
+    margin-top: 10px;
+    /* Add margin to the top of the output area */
+    display: grid;
+    /* Use grid layout */
+    justify-items: center;
+    /* Center items inside the grid */
+}
+
+/* Media query for smaller screen sizes (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        /* Remove margin */
+        padding: 0;
+        /* Remove padding */
+        display: block;
+        /* Switch to block display for smaller screens */
+    }
+
+    /* Header adjustments for small screens */
+    header {
+        font-size: 20px;
+        /* Reduce the font size */
+        padding: 20px;
+        /* Increase padding */
+    }
+
+    /* Footer adjustments for small screens */
+    footer {
+        background-color: purple;
+        /* Set a purple background color for the footer */
+        padding: 20px;
+        /* Add padding */
+    }
+
+    /* Main content adjustments for small screens */
+    main {
+        padding: 0;
+        /* Remove padding */
+    }
+
+    /* Container adjustments for small screens */
+    .container {
+        display: block;
+        /* Switch to block display */
+        text-align: center;
+        /* Center text inside the container */
+        background-color: #05eef2;
+    }
+
+    /* Adjustments for child elements inside the container */
+    .container>* {
+        display: block;
+        /* Switch to block display for child elements */
+    }
+
+    /* Adjustments for color picker section */
+    #colorpos>* {
+        width: 20%;
+        /* Reduce the width of color picker input */
+        height: 100%;
+        /* Maintain the height */
+    }
+
+    /* Force input[type=color] to be properly sized on small screens */
+    input[type="color"] {
+        width: 50px !important;
+        /* Force width */
+        height: 20px !important;
+        /* Force height */
+        padding: 0 !important;
+        /* Remove padding */
+        margin: 0 !important;
+        /* Remove margin */
+    }
+
+    /* Make buttons take up full width on small screens */
+    #currentTime,
+    #agent,
+    #promptTest,
+    #tuxBtn {
+        width: 100%;
+        /* Set the button width to 100% */
+    }
+}

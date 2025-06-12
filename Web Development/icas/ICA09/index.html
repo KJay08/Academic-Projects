@@ -1,0 +1,119 @@
+<!--
+Assignment - ICA09
+Author     - Sanjay Kumar
+Date       - 14 April, 2025
+Course     - CMPE2000 Web Development
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and charset configuration for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA09</title>
+
+    <!-- Link to external CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to the jQuery library for DOM manipulation and AJAX -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- Header section displaying the main title of the page -->
+    <header>
+        <!-- The header contains the page title, which describes the content of the page -->
+        ICA09 - jQuery / Ajax intro
+    </header>
+
+    <main>
+        <!-- Section where the user can input their name -->
+        <label for="nameData">Name :</label>
+        <input type="text" name="name" id="nameData">
+        <br>
+        <br>
+
+        <!-- Section where the user can input their hobby -->
+        <label for="hobbyData">Hobby :</label>
+        <input type="text" name="hobby" id="hobbyData">
+        <br>
+        <br>
+
+        <!-- Range input for selecting how much the user likes the hobby -->
+        <label for="likeData">How much I like it :</label>
+        <input type="range" name="like" id="likeData" min="1" max="13" value="8">
+        <br>
+        <br>
+
+        <!-- Button that triggers the "Call with get" functionality -->
+        <button id="getButton">Call with get</button>
+        <br>
+
+        <!-- Paragraph where the result of the GET request will be displayed -->
+        <p id="likeValue"></p>
+        <br>
+
+        <!-- Section for selecting the number of rows for the table -->
+        <section class="tableRange row">
+            <label for="rowRange">Rows Count :</label>
+            <input type="range" id="rowRange" min="1" max="13" value="5">
+        </section>
+
+        <!-- Section for selecting the number of columns for the table -->
+        <section class="tableRange col">
+            <label for="colRange">Column Count :</label>
+            <input type="range" id="colRange" min="1" max="13" value="5">
+        </section>
+        <br>
+
+        <!-- Button that triggers the "Post to make table" functionality -->
+        <button id="createTable">Post to make 5X5 table</button>
+        <br>
+        <!-- Output area where the generated table will be displayed -->
+        <div id="ouputTable"></div>
+        <br>
+        <br>
+
+        <!-- Button to trigger the number generation and display -->
+        <button id="generate">Generate Numbers and Show</button>
+
+        <!-- Paragraph where the generated numbers will be shown -->
+        <p id="arrayDispaly"></p>
+        <br>
+        <br>
+
+        <!-- Button to trigger the modification of numbers and display -->
+        <button id="modify">Post and Show Modified</button>
+
+        <!-- Paragraph where the modified numbers will be shown -->
+        <p id="modArray"></p>
+
+        <br>
+        <br>
+
+        <!-- Button to trigger an intentional failure to test error handling -->
+        <button id="fail">Fail!</button>
+
+        <!-- Paragraph where the error message will be shown -->
+        <p id="serverResponse"></p>
+
+    </main>
+
+    <!-- Footer section displaying copyright information -->
+    <footer>
+        <!-- The footer contains the copyright message with a special character -->
+        <p>&#169; Λαησέζω</p>
+
+        <!-- JavaScript embedded to display the last modified date of the document -->
+        <script>
+            // Display the last modified date of the document at the bottom of the page
+            document.write("last modified: " + document.lastModified);
+        </script>
+    </footer>
+</body>
+
+<!-- Linking to the external JavaScript file to control the page's functionality -->
+<script src="script.js"></script>
+
+</html>

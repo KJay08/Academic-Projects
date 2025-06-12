@@ -1,0 +1,170 @@
+/*  Assignment - ICA07 
+    Author - Sanjay Kumar 
+    Date - 24 March,2025 
+    Course - CMPE2000 Web Development */
+/* Body styling */
+body
+{
+    background-color: lightgrey;
+    /* Set the background color to a light grey */
+    display: grid;
+    /* Use grid layout to align content */
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    /* Define a 3-column layout with the center column taking most space */
+}
+
+/* Header styling */
+header
+{
+    grid-column: span 3;
+    /* Make the header span across all three columns */
+    background-color: aliceblue;
+    /* Set a light blue background color */
+    text-align: center;
+    /* Center-align the text in the header */
+    padding: 20px;
+    /* Add padding around the header content */
+    font-family: 'Courier New', Courier, monospace;
+    /* Use a monospace font for a typewriter-like effect */
+    font-size: 40px;
+    /* Set the font size for the header text */
+    color: whitesmoke;
+    /* Set text color to a soft white */
+    text-shadow: black 1px 0 10px;
+    /* Add a subtle black shadow effect to the header text */
+}
+
+/* Main content area styling */
+main
+{
+    justify-self: center;
+    grid-column: 2 / 3;
+    /* Place the main content in the center column */
+    display: grid;
+    /* Use grid layout inside the main content */
+    grid-template-columns: repeat(3, 1fr);
+    /* Create three equal-width columns for layout */
+}
+
+/* Image container styling */
+.imageContainer
+{
+    grid-column: span 3;
+    /* Make the image container span across all three columns */
+}
+
+/* Image element styling */
+img
+{
+    width: 100%;
+    /* Set the image width to 950px for a good display size */
+}
+
+/* Previous button styling */
+#previous
+{
+    grid-column: span 1/2;
+    /* Make the previous button span across the first half of the grid */
+    width: 100px;
+    /* Set the button width to 100px */
+    height: 40px;
+    /* Set the button height to 40px */
+    border-radius: 5px;
+    /* Add rounded corners to the button */
+    background-color: black;
+    /* Set a black background for the button */
+    color: aliceblue;
+    /* Set the text color of the button to light blue */
+}
+
+/* Next button styling */
+#next
+{
+    grid-column: 3 / 4;
+    /* Place the next button in the third column */
+    width: 100px;
+    /* Set the button width to 100px */
+    height: 40px;
+    /* Set the button height to 40px */
+    border-radius: 5px;
+    /* Add rounded corners to the button */
+    background-color: black;
+    /* Set a black background for the button */
+    color: aliceblue;
+    /* Set the text color of the button to light blue */
+    justify-self: end;
+    /* Align the button to the end of the column */
+}
+
+#view-count
+{
+    grid-column: 2 / 3;
+    /* Center the pause/resume button in the middle column */
+    justify-self: center;
+    /* Center the button in the grid */
+    padding-bottom: 30px;
+}
+
+/* Pause/Resume button styling */
+#pauseResume
+{
+    grid-column: 2 / 3;
+    /* Center the pause/resume button in the middle column */
+    width: 100px;
+    /* Set the button width to 100px */
+    height: 40px;
+    /* Set the button height to 40px */
+    border-radius: 5px;
+    /* Add rounded corners to the button */
+    background-color: black;
+    /* Set a black background for the button */
+    color: aliceblue;
+    /* Set the text color of the button to light blue */
+    justify-self: center;
+    /* Center the button in the grid */
+}
+
+/* Footer styling */
+footer
+{
+    margin-top: 5px;
+    /* Add a small margin at the top of the footer */
+    grid-column: span 3;
+    /* Make the footer span across all three columns */
+    background-color: aliceblue;
+    /* Set a light blue background for the footer */
+    color: black;
+    /* Set the text color to black */
+    text-align: center;
+    /* Center-align the text inside the footer */
+}
+
+@media (max-width : 600px)
+{
+
+    /* Make the body layout switch to a block layout for small screens */
+    body
+    {
+        display: block;
+        text-align: center;
+    }
+
+    main
+    {
+        display: block;
+    }
+
+    /* Adjust the dropdown width to be more appropriate for smaller screens */
+    img
+    {
+        width: 90%;
+        /* Reduce the width of the dropdown to 100px */
+    }
+
+    /* Make the submit button take the full width of the form on smaller screens */
+    button
+    {
+        width: 100%;
+        /* Make the button take up the full width of the form */
+    }
+}

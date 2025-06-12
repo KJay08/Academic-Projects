@@ -1,0 +1,122 @@
+/* General body styling */
+body {
+    display: grid;
+    /* Enables the use of grid layout */
+    text-align: center;
+    /* Centers the text within the body */
+}
+
+/* Styling for the main header (h1) */
+h1 {
+    text-align: center;
+    /* Centers the title text */
+    background-color: aqua;
+    /* Sets the background color to aqua */
+    padding: 20px;
+    /* Adds padding around the text */
+}
+
+/* Main section styling */
+main {
+    display: grid;
+    /* Enables grid layout within main */
+    justify-items: center;
+    /* Centers items within the grid */
+    /* Defines grid layout for the areas in the page */
+    grid-template-areas:
+        ".    chance  chance  . . . ."
+        /* Chance area with padding */
+        ".    center  center  . . . ."
+        /* Centered content in the middle */
+        ".    center  center  . . . ."
+        ".    center  center  . . . ."
+        ".    center  center  . . . ."
+        "link .       .       . . . .";
+        /* Link area at the bottom */
+       
+    /* Adds space between grid items */
+    gap: 10px;
+}
+
+/* Styling for the 'chance' area */
+.chance {
+    grid-area: chance;
+    /* Uses the grid area defined as 'chance' */
+}
+
+/* Styling for the table element */
+table {
+    padding: 0;
+    /* Removes default padding */
+    margin: 0;
+    /* Removes default margin */
+    border-collapse: collapse;
+    /* Collapses table borders to remove spacing between cells */
+    grid-area: center;
+    /* Uses the grid area defined as 'center' */
+}
+
+/* Styling for the links section */
+.links {
+    text-align: left;
+    /* Aligns text to the left in the links section */
+    margin: 0;
+    /* Removes default margin */
+    grid-area: link;
+    /* Uses the grid area defined as 'link' */
+}
+
+/* Styling for the first column of the table (Chance Draw) */
+td:nth-child(1) {
+    width: 400px;
+    /* Sets a fixed width for the first column */
+    text-align: start;
+    /* Aligns text to the start of the cell */
+}
+
+/* Styling for table headers and cells */
+th,
+td {
+    border: 1px solid black;
+    /* Adds a black border around table cells */
+}
+
+/* Link styling (for unvisited links) */
+a:link {
+    background-color: lightblue;
+    /* Light blue background for links */
+    font-family: 'Courier New', Courier, monospace;
+    /* Monospace font for links */
+}
+
+/* Link styling for visited links */
+a:visited {
+    background-color: lightgreen;
+    /* Light green background for visited links */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Specific font for visited links */
+}
+
+/* Link styling when hovered over */
+a:hover {
+    background-color: lightgrey;
+    /* Light grey background when the link is hovered */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Different font when hovered */
+}
+
+/* Link styling when actively clicked */
+a:active {
+    background-color: lightyellow;
+    /* Light yellow background when the link is clicked */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Font for active links */
+}
+
+/* Footer styling */
+footer {
+    font-weight: bold;
+    /* Makes the text bold */
+    color: red;
+    /* Sets the text color to red */
+}

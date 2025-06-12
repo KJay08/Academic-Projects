@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA04 Form Grid</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking external CSS file -->
+</head>
+
+<body>
+    <div class="container"> <!-- Main container for layout -->
+        <header class="heading">ICA04 - CSS Grid Forms</header> <!-- Page heading -->
+
+        <main class="content"> <!-- Main content section -->
+            <form action="https://thor.cnt.sast.ca/~demo/cmpe2000/ica04_formtest.php" method="post">
+                <!-- Hidden input to store additional data without user input -->
+                <input type="hidden" name="hidden_value" value="Sanjay">
+
+                <!-- Username input field -->
+                <div class="form-group Name">
+                    <label for="username" id="name">Username:</label>
+                    <input type="text" id="username" name="username" maxlength="16" placeholder="Your username"
+                        required>
+                </div>
+
+                <!-- PIN input field -->
+                <div class="form-group PIN">
+                    <label for="pin">PIN:</label>
+                    <input type="password" id="pin" name="pin" maxlength="6" placeholder="Your PIN">
+                </div>
+
+                <!-- Byte value input using a range slider -->
+                <div class="form-group Byte">
+                    <label for="byte_value">Byte Value:</label>
+                    <input type="range" id="byte_value" name="byte_value" min="0" max="255">
+                </div>
+
+                <!-- Date input field with a default value -->
+                <div class="form-group Date">
+                    <label for="date_value" id="datetext">Best Date:</label>
+                    <input type="date" id="date_value" name="date_value" value="1967-09-09">
+                </div>
+
+                <!-- Color picker input field -->
+                <div class="form-group color">
+                    <label for="color_value" id="colortext">Best Color:</label>
+                    <input type="color" id="color_value" name="color_value" value="#ABCDEF">
+                </div>
+
+                <!-- Fieldset for selecting travel mode using radio buttons -->
+                <fieldset>
+                    <legend>Preferred Travel Mode:</legend>
+                    <label><input type="radio" name="travel" value="Aircraft" required> Planes/Aircraft</label>
+                    <label><input type="radio" name="travel" value="Railway"> Trains/Railway</label>
+                    <label><input type="radio" name="travel" value="Car"> Automobiles/Car</label>
+                </fieldset>
+
+                <!-- Dropdown selection for sci-fi movie choice -->
+                <div class="form-group sci-fi">
+                    <label for="science_fiction" id="sci-fitext">Choice of Sci-Fi:</label>
+                    <select id="science_fiction" name="science_fiction">
+                        <option value="Metropolis">Really Old / Metropolis</option>
+                        <option value="Star Trek">Old / Star Trek</option>
+                        <option value="Star Wars">Kinda Old / Star Wars</option>
+                        <option value="Dune">Recent / Dune</option>
+                    </select>
+                </div>
+
+                <!-- Checkbox for acknowledging terms -->
+                <div class="form-group checkbox">
+                    <label><input type="checkbox" name="acknowledge"> I acknowledge the terms</label>
+                </div>
+
+                <!-- Buttons for resetting the form or submitting it -->
+                <div class="form-buttons">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Test Submission</button>
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer"> <!-- Footer section -->
+            <p>&#169; Λαησέζω</p>
+            <script>
+                // Display last modified date of the document
+                document.write("Last modified: " + document.lastModified);
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>

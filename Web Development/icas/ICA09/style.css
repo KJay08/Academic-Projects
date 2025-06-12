@@ -1,0 +1,141 @@
+/*  Assignment - ICA09
+    Author - Sanjay Kumar 
+    Date - 14 April,2025 
+    Course - CMPE2000 Web Development */
+    
+/* Header styling */
+header
+{
+    grid-column: span 3;
+    /* Make the header span across all three columns in the grid */
+    background-color: aliceblue;
+    /* Set a light blue background color for the header */
+    text-align: center;
+    /* Center-align the text inside the header */
+    padding: 20px;
+    /* Add 20px of padding around the header content */
+    font-family: 'Courier New', Courier, monospace;
+    /* Use a monospace font for a typewriter-like effect */
+    font-size: 40px;
+    /* Set the font size for the header text */
+    color: whitesmoke;
+    /* Set the text color to a soft white for contrast */
+    text-shadow: black 1px 0 10px;
+    /* Add a subtle black shadow effect to the header text for depth */
+}
+
+/* Main content section styling */
+main
+{
+    display: grid;
+    /* Set the main content section to use grid layout */
+    grid-template-columns: repeat(2, 1fr);
+    /* Create two equal-width columns for the grid */
+    background-color: antiquewhite;
+    /* Set a soft beige background color */
+}
+
+/* Label styling */
+label
+{
+    grid-column: 1;
+    /* Make the label take up the first column in the grid */
+    text-align: center;
+    /* Center-align the text inside the label */
+}
+
+/* Input field styling */
+input
+{
+    grid-column: 2;
+    /* Make the input field take up the second column in the grid */
+}
+
+/* Button styling */
+button
+{
+    grid-column: span 2;
+    /* Make the button span across both columns */
+}
+
+/* Table range input section styling */
+.tableRange
+{
+    display: grid;
+    /* Set the .tableRange section to use grid layout */
+    grid-template-columns: repeat(2, 1fr);
+    /* Create two equal-width columns for the grid */
+}
+
+/* Row range input section styling */
+.row
+{
+    grid-column: 1;
+    /* Make the row range input take up the first column */
+}
+
+label[for="rowRange"]
+{
+    grid-column: 1;
+    /* Make the row label take up the first column */
+}
+
+/* Row range input element styling */
+#rowRange
+{
+    grid-column: 2;
+    /* Make the row range input take up the second column */
+}
+
+/* Column range input section styling */
+.col
+{
+    grid-column: 2;
+    /* Make the column range input section take up the second column */
+    text-align: center;
+    /* Center-align the content inside the column range section */
+}
+
+/* Column label styling */
+label[for="colRange"]
+{
+    grid-column: 1;
+    /* Make the column label take up the first column */
+}
+
+/* Column range input element styling */
+#colRange
+{
+    grid-column: 2;
+    /* Make the column range input take up the second column */
+}
+
+/* Styling for content that spans both columns */
+#likeValue,
+#ouputTable,
+#arrayDispaly,
+#modArray,
+#serverResponse
+{
+    grid-column: span 2;
+    /* Make these elements span both columns */
+    text-align: center;
+    /* Center-align the content inside these elements */
+    justify-self: center;
+    /* Vertically center the content within the grid item */
+}
+
+/* Footer styling */
+footer
+{
+    margin-top: 5px;
+    /* Add a small margin at the top of the footer */
+    grid-column: span 3;
+    /* Make the footer span across all three columns */
+    background-color: aliceblue;
+    /* Set a light blue background color for the footer */
+    color: black;
+    /* Set the text color inside the footer to black for contrast */
+    text-align: center;
+    /* Center-align the text inside the footer */
+}

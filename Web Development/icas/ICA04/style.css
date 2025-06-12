@@ -1,0 +1,279 @@
+/* General Styles for the Body */
+body {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    /* Sets a clean, readable font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.heading {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* General Styling for Form Groups and Fieldset */
+.form-group,
+fieldset {
+    display: grid;
+    gap: 5px;
+    /* Adds spacing between grid items */
+}
+
+/* Main Content Styling */
+main {
+    padding: 5px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Container for the Form */
+.container {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Width Adjustments for Different Form Fields */
+.Name {
+    width: 70%;
+}
+
+.PIN {
+    width: 50%;
+}
+
+.Date {
+    width: 70%;
+    grid-template-columns: 0.3fr 1fr;
+    /* Adjusts layout for date input */
+}
+
+#datetext {
+    padding-top: 10px;
+    /* Adds spacing above the label */
+}
+
+/* General Input, Select, and Button Styling */
+input,
+select,
+button {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Select Dropdown Styling */
+select {
+    background-color: yellow;
+    /* Gives dropdown a distinct look */
+}
+
+/* Color Picker Section */
+.color {
+    width: 40%;
+    grid-template-columns: 0.8fr 1fr;
+    /* Adjusts label and input layout */
+}
+
+#colortext {
+    padding-top: 5px;
+}
+
+/* Color Input Field */
+#color_value {
+    width: 60px;
+    height: 30px;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+/* Sci-Fi Selection Layout */
+.sci-fi {
+    grid-template-columns: 0.15fr 1fr;
+}
+
+#sci-fitext {
+    padding-top: 10px;
+}
+
+/* Dropdown Width Adjustments */
+#science_fiction {
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Form Button Layout */
+.form-buttons {
+    display: grid;
+}
+
+/* Button Styling */
+button {
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: lightgrey;
+    font-size: 16px;
+}
+
+/* Padding Adjustments for Specific Form Sections */
+.PIN,
+.Byte,
+.Date,
+.color,
+.sci-fi,
+.checkbox {
+    padding-top: 20px;
+}
+
+.color {
+    padding-bottom: 20px;
+}
+
+.checkbox {
+    padding-bottom: 20px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Styles for Screens Larger Than 600px */
+@media (min-width: 600px) {
+
+    /* Background Color for All Elements */
+    * {
+        background-color: lightblue;
+    }
+
+    /* Responsive Container Styling */
+    .container {
+        background-image: url('Image/image.webp');
+        /* Adds background image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 3px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 6fr 1fr;
+        /* Centers main content */
+    }
+
+    /* Ensures Content Uses Full Space */
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Spanning Header and Footer */
+    header,
+    footer {
+        grid-column: span 3;
+    }
+
+    /* Centers Main Content */
+    main {
+        grid-column: 2 / 3;
+    }
+
+    /* Grid Layout for Form */
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 3-column layout */
+        grid-template-rows: repeat(4, 1fr);
+        /* 4-row layout */
+    }
+
+    /* Enhanced Input, Select, and Button Styling */
+    input,
+    select,
+    button {
+        font-weight: bold;
+        background-color: aliceblue;
+    }
+
+    /* Dropdown Styling */
+    select {
+        background-color: yellow;
+        height: 40px;
+        /* Increases height for better usability */
+    }
+
+    /* Header Full-Width Adjustment */
+    .heading {
+        width: 100%;
+    }
+
+    /* Button Alignment */
+    .form-buttons {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        /* Makes buttons span full width */
+    }
+
+    /* Adjustments for PIN and Byte Fields */
+    .PIN,
+    .Byte {
+        padding: 0px;
+    }
+
+    /* Adjustments for Color Section */
+    .color {
+        width: 50%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Sci-Fi Section Grid Layout */
+    .sci-fi {
+        grid-template-columns: 0.6fr 1fr;
+    }
+
+    /* Date Field Grid Layout */
+    .Date {
+        width: 70%;
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    /* Date Input Height */
+    input[type="date"] {
+        height: 20px;
+    }
+
+    /* Adjustments for Text, Password, and Range Inputs */
+    input[type="text"],
+    input[type="password"],
+    input[type="range"] {
+        height: 10px;
+        margin-bottom: 50px;
+    }
+
+    /* Fieldset Styling */
+    fieldset {
+        border-color: blue;
+    }
+
+    /* Button Styling */
+    button {
+        cursor: pointer;
+        border: 1px solid black;
+        background-color: lightgrey;
+        font-size: 16px;
+    }
+
+    /* Paragraph Background Color */
+    p {
+        background-color: lightgoldenrodyellow;
+    }
+}

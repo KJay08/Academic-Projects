@@ -1,0 +1,395 @@
+/* Style for the header (h1) */
+h1 {
+    text-align: center;
+    /* Centers the text */
+    background-color: aqua;
+    /* Sets the background color of the header */
+    padding: 20px;
+    /* Adds padding inside the header */
+}
+
+/* Board grid layout */
+.board {
+    display: grid;
+    /* Sets the display property to grid */
+    grid-template: repeat(11, 0.75fr)/repeat(11, 1fr);
+    /* Defines grid rows and columns */
+    grid-template-areas:
+        "A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11"
+        "B1 B2 B3 B4 B5 B6 B7 B8 B9 B10 B11"
+        "C1 C2 C2 C2 C2 C2 C2 C2 C2 C2 C11"
+        "D1 C2 C2 C2 C2 C2 C2 C2 C2 C2 D11"
+        "E1 C2 C2 C2 C2 C2 C2 C2 C2 C2 E11"
+        "F1 C2 C2 C2 C2 C2 C2 C2 C2 C2 F11"
+        "G1 G2 G3 G4 G5 G6 G7 G8 G9 G10 G11"
+        "H1 H2 H2 H4 H5 H6 H7 H8 H9 H10 H11"
+        "I1 I2 I2 I4 I5 I6 I7 I8 I9 I10 I11"
+        "J1 J2 J2 J4 J5 J6 J7 J8 J9 J10 J11"
+        "K1 K2 K3 K4 K5 K6 K7 K8 K9 K10 K11";
+    /* Defines the grid layout for the Monopoly board */
+    height: 100vh;
+    /* Makes the board fill the height of the viewport */
+}
+
+/* Assign each item to its grid area (A1 to K11) */
+.item.A1 {
+    grid-area: A1;
+}
+
+.item.A2 {
+    grid-area: A2;
+}
+
+.item.A3 {
+    grid-area: A3;
+}
+
+.item.A4 {
+    grid-area: A4;
+}
+
+.item.A5 {
+    grid-area: A5;
+}
+
+.item.A6 {
+    grid-area: A6;
+}
+
+.item.A7 {
+    grid-area: A7;
+}
+
+.item.A8 {
+    grid-area: A8;
+}
+
+.item.A9 {
+    grid-area: A9;
+}
+
+.item.A10 {
+    grid-area: A10;
+}
+
+.item.A11 {
+    grid-area: A11;
+}
+
+.item.B1 {
+    grid-area: B1;
+}
+
+.item.C1 {
+    grid-area: C1;
+}
+
+.item.D1 {
+    grid-area: D1;
+}
+
+.item.E1 {
+    grid-area: E1;
+}
+
+.item.F1 {
+    grid-area: F1;
+}
+
+.item.G1 {
+    grid-area: G1;
+}
+
+.item.H1 {
+    grid-area: H1;
+}
+
+.item.I1 {
+    grid-area: I1;
+}
+
+.item.J1 {
+    grid-area: J1;
+}
+
+.item.K1 {
+    grid-area: K1;
+}
+
+.item.K2 {
+    grid-area: K2;
+}
+
+.item.K3 {
+    grid-area: K3;
+}
+
+.item.K4 {
+    grid-area: K4;
+}
+
+.item.K5 {
+    grid-area: K5;
+}
+
+.item.K6 {
+    grid-area: K6;
+}
+
+.item.K7 {
+    grid-area: K7;
+}
+
+.item.K8 {
+    grid-area: K8;
+}
+
+.item.K9 {
+    grid-area: K9;
+}
+
+.item.K10 {
+    grid-area: K10;
+}
+
+.item.B11 {
+    grid-area: B11;
+}
+
+.item.C11 {
+    grid-area: C11;
+}
+
+.item.D11 {
+    grid-area: D11;
+}
+
+.item.E11 {
+    grid-area: E11;
+}
+
+.item.F11 {
+    grid-area: F11;
+}
+
+.item.G11 {
+    grid-area: G11;
+}
+
+.item.H11 {
+    grid-area: H11;
+}
+
+.item.I11 {
+    grid-area: I11;
+}
+
+.item.J11 {
+    grid-area: J11;
+}
+
+.item.K11 {
+    grid-area: K11;
+}
+
+/* General styling for each board item */
+.item {
+    border: 1px solid black;
+    /* Adds a black border around each item */
+    background-color: bisque;
+    /* Sets the background color to bisque */
+}
+
+/* Specific styles for some board items (these highlight specific properties) */
+.item.A2,
+.item.A4,
+.item.A5 {
+    border-bottom: 20px solid red;
+    /* Adds a red bottom border for these items */
+}
+
+.item.A7,
+.item.A8,
+.item.A10 {
+    border-bottom: 20px solid yellow;
+    /* Adds a yellow bottom border for these items */
+}
+
+.item.B11,
+.item.C11,
+.item.E11 {
+    border-left: 20px solid green;
+    /* Adds a green left border for these items */
+}
+
+.item.H11,
+.item.J11 {
+    border-left: 20px solid blue;
+    /* Adds a blue left border for these items */
+}
+
+.item.K2,
+.item.K3,
+.item.K5 {
+    border-top: 20px solid lightblue;
+    /* Adds a light blue top border for these items */
+}
+
+.item.K8,
+.item.K10 {
+    border-top: 20px solid brown;
+    /* Adds a brown top border for these items */
+}
+
+.item.B1,
+.item.C1,
+.item.E1 {
+    border-right: 20px solid orange;
+    /* Adds an orange right border for these items */
+}
+
+.item.G1,
+.item.H1,
+.item.J1 {
+    border-right: 20px solid purple;
+    /* Adds a purple right border for these items */
+}
+
+/* Player section styles (positioning players on the board) */
+.player {
+    grid-area: C2;
+    /* Positions the player section within the grid */
+    display: grid;
+    /* Uses grid layout */
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns for player layout */
+    gap: 10px;
+    /* Adds a gap between the player sections */
+    text-align: center;
+    /* Centers the text inside the player section */
+}
+
+/* Styling for player 1 */
+.player1 {
+    background-color: green;
+    /* Sets the background color for player 1 */
+    display: grid;
+    /* Uses grid layout for player 1 */
+    justify-items: center;
+    /* Centers the content horizontally */
+    align-items: start;
+    /* Aligns the content to the top */
+}
+
+/* Styling for player 2 */
+.player2 {
+    background-color: lightpink;
+    /* Sets the background color for player 2 */
+    display: grid;
+    /* Uses grid layout for player 2 */
+    justify-items: center;
+    /* Centers the content horizontally */
+    align-items: start;
+    /* Aligns the content to the top */
+}
+
+/* Applies styles to all elements inside player sections */
+.player>*>* {
+    color: red;
+    /* Sets the text color to red */
+    padding: 2px;
+    /* Adds padding around the content */
+    border: 1px dotted blue;
+    /* Adds a dotted blue border */
+    font-size: larger;
+    /* Increases the font size */
+}
+
+/* Image styling for player images */
+.playerImage {
+    width: 10%;
+    /* Makes the image width 10% */
+    border: 0;
+    /* Removes any border around the image */
+    width: 100px;
+    /* Sets a fixed width for the image */
+}
+
+/* Styling for the first dice (position and padding) */
+.dice1 {
+    grid-area: G5;
+    /* Positions the dice1 within the grid */
+}
+
+.dice1>* {
+    padding-left: 20px;
+    /* Adds padding to the left of dice1 */
+}
+
+/* Styling for the second dice (position and padding) */
+.dice2 {
+    grid-area: G8;
+    /* Positions the dice2 within the grid */
+}
+
+.diceImage {
+    padding: 5px;
+    /* Adds padding around the dice image */
+    width: 25%;
+    /* Sets the width of the dice image to 25% */
+}
+
+/* Styling for the link section */
+.link {
+    grid-area: H2;
+    /* Positions the link section within the grid */
+    padding-top: 30px;
+    /* Adds top padding */
+    padding-left: 20px;
+    /* Adds left padding */
+}
+
+/* Styling for the link list */
+.linkList {
+    grid-area: I2;
+    /* Positions the link list within the grid */
+}
+
+/* Link styling for different states */
+a:link {
+    background-color: lightblue;
+    /* Sets background color for unvisited links */
+    font-family: 'Courier New', Courier, monospace;
+    /* Sets the font family */
+}
+
+a:visited {
+    background-color: lightgreen;
+    /* Sets background color for visited links */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Changes the font family */
+}
+
+a:hover {
+    background-color: lightgrey;
+    /* Sets background color when hovering over links */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Changes the font family on hover */
+}
+
+a:active {
+    background-color: lightyellow;
+    /* Sets background color when the link is clicked */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Changes the font family when the link is clicked */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    /* Centers the footer text */
+    color: red;
+    /* Sets the text color to red */
+    font-weight: bold;
+    /* Makes the text bold */
+}

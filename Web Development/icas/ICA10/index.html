@@ -1,0 +1,92 @@
+<!--
+Assignment - ICA10
+Author     - Sanjay Kumar
+Date       - 20 April, 2025
+Course     - CMPE2000 Web Development
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata to define the character set and viewport settings for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage that appears on the browser tab -->
+    <title>ICA10</title>
+
+    <!-- Link to an external CSS file that will style the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to the jQuery library for easier DOM manipulation and AJAX calls -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- Header section that displays the main title of the page -->
+    <header>
+        <!-- The header contains the page title, which gives the user an idea of what the page is about -->
+        ICA09 - JSON Vehicles
+    </header>
+
+    <main>
+        <!-- Company selection dropdown -->
+        <div id="companyList">
+            <label for="list">Manufacturer :</label>
+            <select name="companies" id="list" size="5">
+                <!-- Options for different vehicle manufacturers -->
+                <option value="Honda">Honda</option>
+                <option value="Toyota">Toyota</option>
+                <option value="BMW">BMW</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Yamaha">Yamaha</option>
+            </select>
+        </div>
+
+        <!-- Year selection dropdown (will be populated dynamically based on the manufacturer) -->
+        <div id="yearList">
+            <label for="Year">Year :</label>
+            <select name="Year" id="Year">
+                <!-- Year options will be inserted here via JavaScript -->
+            </select>
+        </div>
+
+        <!-- Vehicle type selection dropdown -->
+        <div id="typeList">
+            <label for="type">Type :</label>
+            <select name="type" id="type">
+                <!-- Options for different vehicle types -->
+                <option value="car">car</option>
+                <option value="truck">truck</option>
+                <option value="motorcycle">motorcycle</option>
+                <option value="mpv">mpv</option>
+            </select>
+        </div>
+
+        <!-- Button that triggers the vehicle data request when clicked -->
+        <button id="invoke-Request">Invoke Request</button>
+
+        <!-- Section to display the status of the request (e.g., success or error message) -->
+        <div id="status" class="status"></div>
+
+        <!-- Section to display the results of the request, like vehicle data -->
+        <div id="output" class="output-grid"></div>
+    </main>
+
+    <!-- Footer section containing copyright information -->
+    <footer>
+        <!-- The footer contains the copyright message with a special character (using HTML entities) -->
+        <p>&#169; Λαησέζω</p>
+
+        <!-- Script that dynamically displays the last modified date of the document -->
+        <script>
+            // Display the last modified date of the document at the bottom of the page
+            document.write("last modified: " + document.lastModified);
+        </script>
+    </footer>
+</body>
+
+<!-- External JavaScript file that controls the interactivity and functionality of the page -->
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,180 @@
+/* Importing the Playfair Display font family from Google Fonts for use in the webpage */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Setting up the overall layout of the page */
+body {
+    display: grid;
+    /* Using CSS Grid to structure the body */
+    text-align: center;
+    /* Centering the text */
+}
+
+/* Styling the main header (h1) */
+h1 {
+    text-align: center;
+    /* Ensuring the header is centered */
+    background-color: aqua;
+    /* Setting the background color of the header */
+    padding: 20px;
+    /* Adding padding around the header text */
+}
+
+/* Styling the main section of the page */
+main {
+    margin: 0;
+    /* Removing any margin around the main section */
+    padding: 0;
+    /* Removing any padding around the main section */
+    display: grid;
+    /* Using CSS Grid layout */
+    justify-items: center;
+    /* Centering items within each grid cell */
+
+    /* Defining the grid structure for the page */
+    grid-template-areas:
+        ".    .    . . . . . winInfo winInfo . rentInfo"
+        /* Defining the grid areas */
+        ".    .    . . . . . winner  winner  . rental"
+        /* Winner and Rental areas */
+        "link link . . . . . winner  winner  . rental"
+        /* Link section */
+        ".    .    . . . . . winner  winner  . ."
+        /* Layout for the winner section */
+        ".    .    . . . . . winner  winner  . ."
+        /* Additional winner section */
+        ".    .    . . . . . winner  winner  . .";
+    /* More winner section */
+
+    gap: 10px;
+    /* Setting the gap between grid items */
+}
+
+/* Styling the section for Winner Information */
+.winInfo {
+    grid-area: winInfo;
+    /* Assigning this area to the 'winInfo' grid */
+}
+
+/* Styling the first table (Winner Information) */
+.table1 {
+    grid-area: winner;
+    /* Assigning this area to the 'winner' grid */
+    border-collapse: collapse;
+    /* Ensuring the table borders collapse together */
+    width: 500px;
+    /* Setting the width of the table */
+    height: 500px;
+    /* Setting the height of the table */
+
+    /* Font styling for the table */
+    font-family: "Playfair Display", serif;
+    /* Using the Playfair Display font */
+    font-optical-sizing: auto;
+    /* Auto-adjusting the font size based on text length */
+    font-weight: 400;
+    /* Normal font weight */
+    font-style: normal;
+    /* Normal font style */
+}
+
+/* Styling the section for Rental Information */
+.rentInfo {
+    grid-area: rentInfo;
+    /* Assigning this area to the 'rentInfo' grid */
+}
+
+/* Styling the second table (Rental Information) */
+.table2 {
+    grid-area: rental;
+    /* Assigning this area to the 'rental' grid */
+    border-collapse: collapse;
+    /* Ensuring the table borders collapse together */
+    width: 500px;
+    /* Setting the width of the table */
+    height: 300px;
+    /* Setting the height of the table */
+}
+
+/* Styling the table cells (th and td) */
+th,
+td {
+    border: 2px solid black;
+    /* Adding a solid black border around each cell */
+    width: 10px;
+    /* Setting the width of each cell */
+}
+
+/* Styling alternating table row backgrounds for Rental Information */
+.table2 tbody tr:nth-child(odd) {
+    background-color: lightgreen;
+    /* Setting background color for odd rows */
+}
+
+.table2 tbody tr:nth-child(even) {
+    background-color: aliceblue;
+    /* Setting background color for even rows */
+}
+
+/* Styling the first column of table cells (Property Type) */
+td:nth-child(1) {
+    text-align: start;
+    /* Aligning text to the start (left) */
+}
+
+/* Styling the images inside tables */
+img {
+    width: 70%;
+    /* Scaling the images to 70% of their container's width */
+}
+
+/* Styling the links section */
+.links {
+    grid-area: link;
+    /* Assigning this area to the 'link' grid */
+    padding-right: 20%;
+    /* Adding padding on the right side of the links section */
+    display: grid;
+    /* Using grid layout for links */
+    grid-template-rows: repeat(2, 1fr);
+    /* Creating 2 equal-height rows for the links */
+}
+
+/* Styling the link when it is in the default state (not visited) */
+a:link {
+    background-color: lightblue;
+    /* Setting the background color for unvisited links */
+    font-family: 'Courier New', Courier, monospace;
+    /* Using monospace font for links */
+}
+
+/* Styling the link when it has been visited */
+a:visited {
+    background-color: lightgreen;
+    /* Setting the background color for visited links */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Using a different font family for visited links */
+}
+
+/* Styling the link when the mouse is hovered over it */
+a:hover {
+    background-color: lightgrey;
+    /* Changing the background color when the link is hovered */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Using a different font family when hovered */
+}
+
+/* Styling the link when it is clicked (active state) */
+a:active {
+    background-color: lightyellow;
+    /* Changing the background color when the link is active */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Using another font family for active state */
+}
+
+/* Styling the footer */
+footer {
+    font-weight: bold;
+    /* Making the footer text bold */
+    color: red;
+    /* Setting the footer text color to red */
+}

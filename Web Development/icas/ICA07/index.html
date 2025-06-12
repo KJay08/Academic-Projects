@@ -1,0 +1,56 @@
+<!--
+Assignment - ICA07
+Author     - Sanjay Kumar
+Date       - 24 March, 2025
+Course     - CMPE2000 Web Development
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and charset configuration for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA07 - JS Slideshow</title>
+    <!-- Link to an external CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header section displaying the main title of the page -->
+    <header>
+        <!-- The header contains the page title "ICA07 - JS Slideshow" -->
+        ICA07 - JS Slideshow
+    </header>
+
+    <main>
+        <!-- Main content area of the page -->
+        <div class="imageContainer">
+            <!-- Image element to display the current slideshow image -->
+            <img id="main-image" src="" alt="Slideshow Image">
+        </div>
+
+        <!-- Navigation buttons for controlling the slideshow -->
+        <button id="previous">Previous</button> <!-- Button to go to the previous image -->
+        <button id="next">Next</button> <!-- Button to go to the next image -->
+        <div id="view-count"></div>
+        <button id="pauseResume">Pause</button> <!-- Button to start/pause the slideshow -->
+    </main>
+
+    <!-- Footer section displaying the copyright information -->
+    <footer>
+        <!-- Copyright message with a special character and the author's name -->
+        <p>&#169; Λαησέζω</p>
+
+        <!-- JavaScript embedded to display the last modified date of the document -->
+        <script>
+            // Display the last modified date of the document
+            document.write("last modified: " + document.lastModified);
+        </script>
+    </footer>
+</body>
+
+<!-- Linking to the external JavaScript file to control slideshow functionality -->
+<script src="script.js"></script>
+
+</html>

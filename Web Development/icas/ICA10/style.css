@@ -1,0 +1,128 @@
+/*  Assignment - ICA10
+    Author - Sanjay Kumar
+    Date - 20 April, 2025 
+    Course - CMPE2000 Web Development 
+*/
+
+/* Body Styling */
+body {
+    position: relative;
+    /* Make sure the body is positioned for the pseudo-element */
+    overflow: hidden;
+    /* Prevent any overflow of blurred area */
+    height: 100vh;
+    /* Ensure body takes the full viewport height */
+
+    display: grid;
+    /* Use grid layout for the main body content */
+}
+
+/* Pseudo-element for Background Image */
+body::before {
+    content: '';
+    /* Insert an empty content for the pseudo-element */
+    position: absolute;
+    /* Position it absolutely to cover the entire body */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Stretch it to cover the full height and width of the body */
+    background-image: url("images/Harley.avif");
+    /* Set a background image (Harley Davidson image) */
+    background-position: center;
+    /* Center the image within the pseudo-element */
+    background-size: cover;
+    /* Ensure the image covers the full area without stretching */
+    opacity: 0.7;
+    /* Apply some transparency to the background image */
+    z-index: -1;
+    /* Place the pseudo-element behind the actual content */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    /* Center the text horizontally in the header */
+    font-size: xxx-large;
+    /* Set a large font size for the header text */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* Set the font family for the header */
+    text-shadow: 1px 1px 1px black, 0px 0px 25px blue, 0px 0px 5px darkblue;
+    /* Add text shadow with black and blue glow effects */
+    color: white;
+    /* Set the header text color to white */
+    z-index: 1;
+    /* Make sure the header text stays above the blurred background */
+}
+
+/* Main Content Styling */
+main {
+    background-color: antiquewhite;
+    /* Set the background color of the main section to antiquewhite */
+    align-self: center;
+    /* Center the main content vertically */
+    justify-self: center;
+    /* Center the main content horizontally */
+    width: 80%;
+    /* Set the width of the main content to 80% of the viewport */
+
+    display: grid;
+    /* Use grid layout for the main content */
+    grid-template-columns: repeat(3, 1fr);
+    /* Create a 3-column grid layout */
+    padding: 15px;
+    /* Add padding around the main content */
+    gap: 15px;
+    /* Create spacing between the grid items */
+}
+
+/* General Styling for div and select elements */
+div, select {
+    font-size: large;
+    /* Set a large font size for div and select elements */
+}
+
+/* Manufacturer Dropdown Styling */
+#list {
+    width: 40%;
+    /* Set the width of the manufacturer dropdown to 40% of the container */
+}
+
+/* Vehicle Type Dropdown Styling */
+#type {
+    width: 80%;
+    /* Set the width of the vehicle type dropdown to 80% of the container */
+}
+
+/* Button Styling */
+button {
+    grid-column: span 3;
+    /* Make the button span across all three columns of the grid */
+    height: 40px;
+    /* Set a fixed height for the button */
+    font-size: large;
+    /* Set the font size of the button text to large */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    /* Center the footer text horizontally */
+}
+
+/* Status Section Styling */
+#status {
+    grid-column: span 3;
+    /* Make the status section span across all three columns */
+}
+
+/* Output Section Styling */
+#output {
+    grid-column: span 3;
+    /* Make the output section span across all three columns */
+    display: grid;
+    /* Use grid layout for the output section */
+    grid-template-columns: repeat(6, 1fr);
+    /* Create a 6-column grid inside the output section */
+}

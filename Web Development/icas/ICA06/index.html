@@ -1,0 +1,114 @@
+<!--
+Assignment - ICA06
+Author     - Sanjay Kumar
+Date       - 17 March, 2025
+Course     - CMPE2000 Web Development
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for the page character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file to style the page -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title of the page displayed in the browser tab -->
+    <title>ICA06 - Purchase a Ride</title>
+</head>
+
+<body>
+    <!-- Header section displaying the main title of the page -->
+    <header>ICA06 - Purchase a Ride</header>
+
+    <main>
+        <!-- Form for collecting user input, sending data to the provided URL -->
+        <form action="https://thor.cnt.sast.ca/~demo/cmpe2000/ica04_formtest.php" method="get">
+
+            <!-- Label and dropdown menu for selecting a bike make -->
+            <br>
+            <label for="dropDown">Make:</label>
+
+            <!-- Div to display the bike image based on selection -->
+            <div id="bikeImage">
+                <!-- Dropdown for selecting a brand with different options -->
+                <select name="brand" id="dropDown" size="5">
+                    <!-- Grouping options for easier categorization -->
+                    <optgroup label="Please Pick One">
+                        <option name="Japanese" value="Honda">Japanese</option>
+                        <option name="European" value="Ducati">European</option>
+                        <option name="American" value="Harley">American</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Label for selecting the model of the bike -->
+            <br>
+            <label for="radio">Model:</label>
+
+            <!-- Fieldset groups the radio buttons for selecting a bike model -->
+            <fieldset id="radio">
+                <!-- Individual radio buttons with values corresponding to the price of the model -->
+                <label>
+                    <input type="radio" name="model" value="5000"> Scooter
+                </label><br>
+                <label>
+                    <input type="radio" name="model" value="10000"> Naked
+                </label><br>
+                <label>
+                    <input type="radio" name="model" value="15000"> Track
+                </label>
+            </fieldset>
+            <br>
+
+            <br>
+            <!-- Label for selecting additional options -->
+            <label for="system">Options:</label>
+
+            <!-- Fieldset groups the checkboxes for selecting optional features -->
+            <fieldset>
+                <!-- Individual checkboxes for different bike options with associated costs -->
+                <input type="checkbox" name="ABS" id="system" value="300">Automatic Braking System <br>
+                <input type="checkbox" name="TCS" id="system" value="400">Traction Control System <br>
+                <input type="checkbox" name="FMM" id="system" value="500">Flight Mode Mapping
+            </fieldset>
+            <br>
+
+            <br>
+            <!-- Label and input field for entering the down payment -->
+            <label for="numInput">Pre-Payment:</label>
+            <input type="text" name="down_payment" id="numInput">
+            <br>
+
+            <!-- Hidden input field to store the total cost which will be used for form submission -->
+            <input type="hidden" name="total_cost" id="total_cost" value="">
+
+            <!-- Div to display the status or error message -->
+            <div id="status_output"></div>
+
+            <br>
+            <!-- Submit button to trigger the form submission -->
+            <button type="submit">Purchase</button>
+
+        </form>
+    </main>
+
+    <!-- Footer section displaying the copyright information -->
+    <footer>
+        <p>&#169; Λαησέζω</p>
+
+        <!-- JavaScript to display the last modified date of the document -->
+        <script>
+            document.write("last modified:" + document.lastModified);
+        </script>
+    </footer>
+</body>
+
+<!-- External JavaScript file that contains the logic for interactivity on the page -->
+<script src="script.js"></script>
+
+</html>

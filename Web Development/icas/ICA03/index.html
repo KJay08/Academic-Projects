@@ -1,0 +1,183 @@
+<!--
+Assignment - ICA03
+Author     - Sanjay Kumar
+Date       - 24 March, 2025
+Course     - CMPE2000 Web Development
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking to an external CSS file for styles -->
+    <link rel="stylesheet" href="style.css">
+    <title>ICA03</title> <!-- The title that appears on the browser tab -->
+</head>
+
+<body>
+    <div class="container" id="site"> <!-- Main container that holds the entire page content -->
+
+        <!-- Header section containing the main title of the page -->
+        <header class="header">
+            <p class="replace">ica03 CSS Grid</p> <!-- The main title of the page -->
+        </header>
+
+        <!-- Section displaying the schedule in a table format -->
+        <section class="time">
+            <table class="Schedule">
+                <thead>
+                    <tr>
+                        <th colspan="8" style="text-align: center;">This Schedule</th> <!-- Schedule header -->
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th> <!-- Days of the week in the header row -->
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Schedule times and classes -->
+                    <tr>
+                        <td>8:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>CMPE2000</td>
+                        <td>CMPE2000</td>
+                        <td></td>
+                        <td></td>
+                        <td>CMPE2000</td> <!-- Class schedule for 9:15 AM -->
+                    </tr>
+                    <tr>
+                        <td>10:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="6">CMPE2000</td> <!-- Class that spans multiple rows -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td colspan="2">CMPE2000</td> <!-- Class scheduled over two columns -->
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2:15</td>
+                        <td rowspan="2" colspan="3">CMPE2000</td> <!-- Class spanning two rows and three columns -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3:15</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5:15</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Aside section displaying a chess image -->
+        <aside class="alert">
+            <img id="chessImage" src="Images/chess.png" alt="It is chess image"> <!-- Chess image displayed here -->
+        </aside>
+
+        <!-- Navigation section with links to travel destinations -->
+        <nav class="band">
+            <h2>Travel List</h2>
+            <ul>
+                <!-- List of travel destinations as clickable links -->
+                <li><a
+                        href="https://www.bing.com/travel/place-information?q=Guilin&SID=55d94541-cdc0-bafc-4159-a64cb1951d81&form=SLVTRV&entrypoint=SLVTRV">Guilin,
+                        China</a></li>
+                <li><a
+                        href="https://www.bing.com/travel/place-information?q=Udaipur&SID=5db43e11-9ba8-7f33-5189-de4030a74110&form=SLVTRV&entrypoint=SLVTRV">Udaipur,
+                        India</a></li>
+                <li><a
+                        href="https://www.bing.com/travel/place-information?q=Interlaken&SID=ecbb44b9-d1f5-83fc-2687-1562e7c278f2&form=HUBDES&entrypoint=SLVTRV">Interlaken,
+                        Switzerland</a></li>
+                <li><a
+                        href="https://www.bing.com/travel/place-information?q=Venice&SID=879f117e-1326-8f59-d29e-2a1a630484ab&form=HUBDES&entrypoint=SLVTRV">Venice,
+                        Italy</a></li>
+                <li><a
+                        href="https://www.bing.com/travel/place-information?q=Kauai&SID=f1999497-9651-c610-ccca-45b625112a22&form=SLVTRV&entrypoint=SLVTRV">Kauai,
+                        Hawaii</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section displaying images in a grid format -->
+        <section class="album covers">
+            <img src="Images/img1.jpg" alt="This is an image"> <!-- Image 1 -->
+            <img src="Images/img2.jpg" alt="This is an image"> <!-- Image 2 -->
+            <img src="Images/img3.jpg" alt="This is an image"> <!-- Image 3 -->
+            <img src="Images/img4.jpg" alt="This is an image"> <!-- Image 4 -->
+            <img src="Images/img5.jpg" alt="This is an image"> <!-- Image 5 -->
+        </section>
+
+        <!-- Aside section displaying some entities with HTML codes -->
+        <aside class="entities">
+            <h3>Entities</h3>
+            <p>01. &Sqrt; - Square Root</p>
+            <p>02. &trade; - Trade Mark</p>
+            <p>03. &copy; - Copyright</p>
+            <p>04. &infin; - Infinity</p>
+        </aside>
+
+        <!-- Aside section displaying a feed of messages -->
+        <aside class="feed">
+            <p><span class="name">spock</span><span class="colon">:</span> <span class="message">Beam me up!</span></p>
+            <!-- Feed message 1 -->
+            <p><span class="name">krik</span><span class="colon">:</span> <span class="message">Not right now, maybe
+                    later..</span></p> <!-- Feed message 2 -->
+        </aside>
+
+        <!-- Footer section with copyright and last modified date -->
+        <footer class="footer">
+            <p>&#169; Λαησέζω</p>
+            <script>
+                // Display the last modified date of the document
+                document.write("last modified:" + document.lastModified);
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>
