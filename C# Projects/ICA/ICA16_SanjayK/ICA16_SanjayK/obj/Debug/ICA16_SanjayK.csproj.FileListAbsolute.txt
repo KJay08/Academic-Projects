@@ -1,0 +1,10 @@
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\bin\Debug\ICA16_SanjayK.exe.config
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\bin\Debug\ICA16_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\bin\Debug\ICA16_SanjayK.pdb
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\obj\Debug\ICA16_SanjayK.csproj.AssemblyReference.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\obj\Debug\ICA16_SanjayK.Form1.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\obj\Debug\ICA16_SanjayK.Properties.Resources.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\obj\Debug\ICA16_SanjayK.csproj.GenerateResource.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\obj\Debug\ICA16_SanjayK.csproj.CoreCompileInputs.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\obj\Debug\ICA16_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\icas\ICA16_SanjayK\ICA16_SanjayK\obj\Debug\ICA16_SanjayK.pdb

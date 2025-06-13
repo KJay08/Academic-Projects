@@ -1,0 +1,12 @@
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\bin\Debug\ICA18_SanjayK.exe.config
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\bin\Debug\ICA18_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\bin\Debug\ICA18_SanjayK.pdb
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\bin\Debug\GDIDrawer.dll
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\obj\Debug\ICA18_SanjayK.csproj.AssemblyReference.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\obj\Debug\ICA18_SanjayK.Form1.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\obj\Debug\ICA18_SanjayK.Properties.Resources.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\obj\Debug\ICA18_SanjayK.csproj.GenerateResource.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\obj\Debug\ICA18_SanjayK.csproj.CoreCompileInputs.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\obj\Debug\ICA18_SanjayK.csproj.CopyComplete
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\obj\Debug\ICA18_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\icas\ICA18_SanjayK\ICA18_SanjayK\obj\Debug\ICA18_SanjayK.pdb
