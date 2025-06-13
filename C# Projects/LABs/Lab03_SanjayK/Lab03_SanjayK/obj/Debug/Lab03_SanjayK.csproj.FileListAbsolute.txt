@@ -1,0 +1,16 @@
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\bin\Debug\Lab03_SanjayK.exe.config
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\bin\Debug\Lab03_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\bin\Debug\Lab03_SanjayK.pdb
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.csproj.AssemblyReference.cache
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.Form1.resources
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.ModalDialogHighScore.resources
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.ModelDialog.resources
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.ModelessDialogAnimation.resources
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.ModelessDialongScore.resources
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.Properties.Resources.resources
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.csproj.GenerateResource.cache
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.csproj.CoreCompileInputs.cache
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.pdb
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\bin\Debug\GDIDrawer.dll
+C:\Users\sanja\Music\CMPE1666\labs\Lab03_SanjayK\Lab03_SanjayK\obj\Debug\Lab03_SanjayK.csproj.CopyComplete
