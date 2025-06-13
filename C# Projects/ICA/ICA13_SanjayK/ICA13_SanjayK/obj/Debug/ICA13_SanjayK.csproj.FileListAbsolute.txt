@@ -1,0 +1,11 @@
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\bin\Debug\ICA13_SanjayK.exe.config
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\bin\Debug\ICA13_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\bin\Debug\ICA13_SanjayK.pdb
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\obj\Debug\ICA13_SanjayK.csproj.AssemblyReference.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\obj\Debug\ICA13_SanjayK.Form1.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\obj\Debug\ICA13_SanjayK.ModalDialogForm.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\obj\Debug\ICA13_SanjayK.Properties.Resources.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\obj\Debug\ICA13_SanjayK.csproj.GenerateResource.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\obj\Debug\ICA13_SanjayK.csproj.CoreCompileInputs.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\obj\Debug\ICA13_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\icas\ICA13_SanjayK\ICA13_SanjayK\obj\Debug\ICA13_SanjayK.pdb

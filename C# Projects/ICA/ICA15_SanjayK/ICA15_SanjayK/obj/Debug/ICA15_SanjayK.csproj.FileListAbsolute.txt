@@ -1,0 +1,11 @@
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\bin\Debug\ICA15_SanjayK.exe.config
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\bin\Debug\ICA15_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\bin\Debug\ICA15_SanjayK.pdb
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\obj\Debug\ICA15_SanjayK.csproj.AssemblyReference.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\obj\Debug\ICA15_SanjayK.Form1.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\obj\Debug\ICA15_SanjayK.ModelessDialog.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\obj\Debug\ICA15_SanjayK.Properties.Resources.resources
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\obj\Debug\ICA15_SanjayK.csproj.GenerateResource.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\obj\Debug\ICA15_SanjayK.csproj.CoreCompileInputs.cache
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\obj\Debug\ICA15_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\icas\ICA15_SanjayK\ICA15_SanjayK\obj\Debug\ICA15_SanjayK.pdb
