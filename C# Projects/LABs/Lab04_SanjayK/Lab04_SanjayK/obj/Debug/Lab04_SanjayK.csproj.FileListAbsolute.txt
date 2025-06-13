@@ -1,0 +1,12 @@
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\bin\Debug\Lab04_SanjayK.exe.config
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\bin\Debug\Lab04_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\bin\Debug\Lab04_SanjayK.pdb
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\bin\Debug\GDIDrawer.dll
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\obj\Debug\Lab04_SanjayK.csproj.AssemblyReference.cache
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\obj\Debug\Lab04_SanjayK.Properties.Resources.resources
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\obj\Debug\Lab04_SanjayK.csproj.GenerateResource.cache
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\obj\Debug\Lab04_SanjayK.csproj.CoreCompileInputs.cache
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\obj\Debug\Lab04_SanjayK.csproj.CopyComplete
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\obj\Debug\Lab04_SanjayK.exe
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\obj\Debug\Lab04_SanjayK.pdb
+C:\Users\sanja\Music\CMPE1666\labs\Lab04_SanjayK\Lab04_SanjayK\obj\Debug\Lab04_SanjayK.Form1.resources
